@@ -1,0 +1,101 @@
+@use "../utilitarios" as *;
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho{
+
+    background: url(../images/desktop/image-header.jpg) no-repeat center / cover;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    padding: pxToRem(40);
+
+    &__conteiner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo{
+
+    }
+
+    &__menu{
+
+        .menu{
+
+            &__itens{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                @include celular{
+                    display: none;
+                }
+
+            }
+
+            &__item{
+
+                margin-right: pxToRem(16);
+                padding: pxToRem(18) pxToRem(24);
+                
+                border-radius: 25px;
+                transition: opacity 300ms ease-in-out;
+                &:last-child{
+                    margin-right: 0;
+                }
+                &:hover{
+                    background-color:rgba(255, 255, 255, 0.3);
+                    font-size: 15px;
+                    text-transform: uppercase;
+                }
+
+
+            }
+
+            &__link{
+
+                color: $branco;
+                text-decoration: none;
+
+            }
+            &__hamburger{
+                display: none;
+                @include celular{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            &__hamburger-bar{
+                height: 2px;
+                margin: 3px;
+                width: 26px;
+                background-color: $branco;
+
+            }
+
+        }
+
+    }
+    &__titulo{
+        font-size: pxToRem(32);
+        @include Fraunces-dark;
+        color: $branco;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        letter-spacing: pxToRem(8);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__ceta{
+        height: 80px;
+        width: 22px;
+
+    }
+
+}

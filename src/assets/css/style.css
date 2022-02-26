@@ -187,9 +187,115 @@
   animation: slide-out-t 300ms ease-in-out forwards;
 }
 
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+}
+.conteudo__conteiner {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.conteudo__conteiner-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+.conteudo__titulo {
+  font-size: 2rem;
+  margin-right: 3rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-align: start;
+  margin-left: 6rem;
+  margin-bottom: 2rem;
+}
+.conteudo__texto {
+  margin-left: 6rem;
+  margin-right: 3.5rem;
+  line-height: 1.5rem;
+  font-size: 0.85rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #a7abae;
+}
+.conteudo__link {
+  padding: 0;
+  text-align: start;
+  text-decoration: none;
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-left: 6rem;
+  margin-top: 2rem;
+}
+.conteudo__img {
+  width: 50%;
+  height: 500px;
+}
+
+.link1:hover {
+  border-bottom: rgba(250, 212, 0, 0.5) solid 4px;
+}
+
+.link2:hover {
+  border-bottom: pink solid 4px;
+}
+
+.img1 {
+  background: url(../images/desktop/image-transform.jpg) no-repeat center/cover;
+}
+
+.img2 {
+  background: url(../images/desktop/image-stand-out.jpg) no-repeat center/cover !important;
+}
+
+.img3 {
+  background: url(../images/desktop/image-graphic-design.jpg) no-repeat center/cover;
+}
+
+.img4 {
+  background: url(../images/desktop/image-photography.jpg) no-repeat center/cover;
+}
+
+.conteudo__conteiner-3 {
+  display: flex;
+  width: 100%;
+}
+.conteudo__conteiner-4 {
+  height: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.conteudo__titulo-2 {
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: #25564b;
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+.conteudo__texto-2 {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #25564b;
+  margin-bottom: 4rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
 body {
   font-size: 18px;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */

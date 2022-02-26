@@ -1,0 +1,134 @@
+@use "../utilitarios" as *;
+
+.conteudo{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+
+
+    &__conteiner{
+
+        width: 50%;
+        height: 500px;
+        @include flex-cc;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+       
+
+        
+
+    }
+
+    &__conteiner-2{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+
+    }
+    &__titulo{
+        font-size: 2.0rem;
+        margin-right: 3rem;
+        @include Fraunces-dark;
+        text-align: start;
+        margin-left: 6.0rem;
+        margin-bottom: 2rem;
+
+    }
+    &__texto{
+        margin-left: 6.0rem;
+        margin-right: 3.5rem;
+        line-height: 1.5rem;
+        font-size: 0.85rem;
+        @include Barlow;
+        color: $azul-cinza-claro;
+    }
+    &__link{
+        padding: 0;
+        text-align: start;
+        text-decoration: none;
+        color: $azul-dark;
+        @include Fraunces-dark;
+        margin-left: 6.0rem;
+        margin-top: 2rem;
+       
+
+
+
+        
+    }
+    &__img{
+        width: 50%;
+        height: 500px;
+        
+    }
+}
+.link1{
+    &:hover{
+        border-bottom: hsla(51, 100%, 49%,0.5) solid 4px;
+    }
+}
+.link2{
+    &:hover{
+        border-bottom: pink solid 4px;
+    }
+}
+.img1{
+    background: url(../images/desktop/image-transform.jpg) no-repeat center / cover;
+}
+.img2{
+    background: url(../images/desktop/image-stand-out.jpg) no-repeat center / cover !important;
+}
+.img3{
+    background: url(../images/desktop/image-graphic-design.jpg) no-repeat center / cover ;
+}
+.img4{
+    background: url(../images/desktop/image-photography.jpg) no-repeat center / cover ;
+}
+
+.conteudo{
+
+    &__conteiner-3{
+
+        display: flex;
+        width: 100%;
+
+
+    }
+
+    &__conteiner-4{
+
+        height: 500px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__titulo-2{
+
+        font-size: 1.6rem;
+        text-align: center;
+        @include Fraunces;
+        color: $esmeralda;
+        margin-bottom: 2rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
+
+        
+
+    }
+    &__texto-2{
+
+        text-align: center;
+        @include Barlow;
+        color: $esmeralda;
+        margin-bottom: 4rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        
+
+    }
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./assets/css/reset.css"
 import "./assets/css/style.css"
-import Cabecalho from './components/Cabecalho';
+import Cabecalho from './components/cabecalho';
 
 class App extends Component {
 

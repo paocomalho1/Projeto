@@ -42,9 +42,8 @@
             }
 
             &__item{
-
+                
                 margin-right: pxToRem(16);
-                padding: pxToRem(18) pxToRem(24);
                 color: $branco;
                 border-radius: 25px;
                 transition: opacity 300ms ease-in-out;
@@ -55,15 +54,17 @@
                     background-color:rgba(255, 255, 255, 0.3);
                     text-transform: uppercase;
                     font-size: .85rem;
+                    cursor: pointer;
                 }
 
 
             }
 
             &__link{
-
+                display: block;
                 color: inherit;
                 text-decoration: none;
+                padding: pxToRem(18) pxToRem(24);
 
             }
             &__hamburger{
@@ -141,7 +142,6 @@
 
         }
         &__menu__item{
-            padding: pxToRem(18) pxToRem(24);
             border-radius: 25px;
             margin-bottom: 1rem;
             color: $azul-cinza;
@@ -160,8 +160,9 @@
         &__menu__link{
             text-decoration: none;
             color: inherit;
-
+            display: block;
             @include Barlow;
+            padding: pxToRem(18) pxToRem(24);
         }
 
     }

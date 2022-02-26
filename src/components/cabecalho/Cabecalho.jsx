@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from "../assets/images/logo.svg"
-import ceta from "../assets/images/icon-arrow-down.svg"
+import logo from "../../assets/images/logo.svg"
+import ceta from "../../assets/images/icon-arrow-down.svg"
 
 
 class Cabecalho extends Component {

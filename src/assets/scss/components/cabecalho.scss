@@ -109,9 +109,13 @@
         top: -60%;
         left: 6%;
         width: 88%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        display: none;
+        @include celular{
+
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
         
         &__menu{
 

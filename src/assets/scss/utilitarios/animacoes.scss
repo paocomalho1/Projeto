@@ -16,3 +16,21 @@
         top: -60%
     }
 }
+@keyframes slide-in-t{
+    from{
+        top: -64.6%;
+
+    }
+    to{
+        top: 14.4%;
+    }
+}
+@keyframes slide-out-t{
+    from{
+        top: 14.4%;
+
+    }
+    to{
+        top: -64.6%;
+    }
+}

@@ -49,6 +49,11 @@
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+@media only screen and (max-width: 375px) {
+  .cabecalho {
+    background: url(../images/mobile/image-header.jpg) no-repeat center/cover;
+  }
+}
 .cabecalho__conteiner {
   display: flex;
   align-items: center;
@@ -191,6 +196,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+.conteudo__conteiner-5 {
+  width: 100%;
+  display: flex;
+}
+@media only screen and (max-width: 375px) {
+  .conteudo__conteiner-5 {
+    flex-direction: column-reverse;
+  }
+}
 .conteudo__conteiner {
   width: 50%;
   height: 500px;
@@ -200,10 +214,20 @@
   flex-direction: column;
   align-items: flex-start;
 }
+@media only screen and (max-width: 375px) {
+  .conteudo__conteiner {
+    width: 100%;
+  }
+}
 .conteudo__conteiner-2 {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
+}
+@media only screen and (max-width: 375px) {
+  .conteudo__conteiner-2 {
+    flex-direction: column-reverse;
+  }
 }
 .conteudo__titulo {
   font-size: 2rem;
@@ -214,6 +238,13 @@
   margin-left: 6rem;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 375px) {
+  .conteudo__titulo {
+    text-align: center;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+}
 .conteudo__texto {
   margin-left: 6rem;
   margin-right: 3.5rem;
@@ -223,19 +254,40 @@
   font-weight: 600;
   color: #a7abae;
 }
+@media only screen and (max-width: 375px) {
+  .conteudo__texto {
+    text-align: center;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+}
 .conteudo__link {
   padding: 0;
   text-align: start;
   text-decoration: none;
   color: #23303e;
+  font-size: 1.2rem;
   font-family: "Fraunces", serif;
   font-weight: 900;
   margin-left: 6rem;
   margin-top: 2rem;
 }
+@media only screen and (max-width: 375px) {
+  .conteudo__link {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .conteudo__img {
   width: 50%;
   height: 500px;
+}
+@media only screen and (max-width: 375px) {
+  .conteudo__img {
+    width: 100%;
+  }
 }
 
 .link1:hover {
@@ -249,22 +301,48 @@
 .img1 {
   background: url(../images/desktop/image-transform.jpg) no-repeat center/cover;
 }
+@media only screen and (max-width: 375px) {
+  .img1 {
+    background: url(../images/mobile/image-transform.jpg) no-repeat center/cover;
+  }
+}
 
 .img2 {
-  background: url(../images/desktop/image-stand-out.jpg) no-repeat center/cover !important;
+  background: url(../images/desktop/image-stand-out.jpg) no-repeat center/cover;
+}
+@media only screen and (max-width: 375px) {
+  .img2 {
+    background: url(../images/mobile/image-stand-out.jpg) no-repeat center/cover;
+  }
 }
 
 .img3 {
   background: url(../images/desktop/image-graphic-design.jpg) no-repeat center/cover;
 }
+@media only screen and (max-width: 375px) {
+  .img3 {
+    background: url(../images/mobile/image-graphic-design.jpg) no-repeat center/cover;
+  }
+}
 
 .img4 {
-  background: url(../images/desktop/image-photography.jpg) no-repeat center/cover;
+  background: url(../images/mobile/image-photography.jpg) no-repeat center/cover;
+}
+@media only screen and (max-width: 375px) {
+  .img4 {
+    background: url(../images/mobile/image-photography.jpg) no-repeat center/cover;
+  }
 }
 
 .conteudo__conteiner-3 {
   display: flex;
   width: 100%;
+}
+@media only screen and (max-width: 375px) {
+  .conteudo__conteiner-3 {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .conteudo__conteiner-4 {
   height: 500px;
@@ -273,8 +351,13 @@
   flex-direction: column;
   justify-content: flex-end;
 }
+@media only screen and (max-width: 375px) {
+  .conteudo__conteiner-4 {
+    width: 100%;
+  }
+}
 .conteudo__titulo-2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: center;
   font-family: "Fraunces", serif;
   font-weight: 700;
@@ -283,8 +366,15 @@
   margin-right: 5rem;
   margin-left: 5rem;
 }
+@media only screen and (max-width: 375px) {
+  .conteudo__titulo-2 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
 .conteudo__texto-2 {
   text-align: center;
+  font-size: 1rem;
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   color: #25564b;
@@ -292,9 +382,20 @@
   margin-right: 5rem;
   margin-left: 5rem;
 }
+@media only screen and (max-width: 375px) {
+  .conteudo__texto-2 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
 
 .clientes {
   padding: 6rem;
+}
+@media only screen and (max-width: 375px) {
+  .clientes {
+    padding: 2rem;
+  }
 }
 .clientes__titulo {
   text-align: center;
@@ -309,12 +410,23 @@
 }
 .clientes__conteiner {
   display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 375px) {
+  .clientes__conteiner {
+    flex-direction: column;
+  }
 }
 .clientes__conteiner-2 {
   display: flex;
   flex-direction: column;
   margin: 1rem;
   width: 33%;
+}
+@media only screen and (max-width: 375px) {
+  .clientes__conteiner-2 {
+    width: 100%;
+  }
 }
 .clientes__conteiner-img {
   display: flex;
@@ -336,6 +448,11 @@
   font-weight: 600;
   color: #818498;
 }
+@media only screen and (max-width: 375px) {
+  .clientes__texto {
+    font-size: 1rem;
+  }
+}
 .clientes__nome {
   color: #23303e;
   margin-bottom: 1rem;
@@ -355,25 +472,58 @@
   display: flex;
   width: 100%;
 }
+@media only screen and (max-width: 375px) {
+  .rodape__imgs {
+    flex-wrap: wrap;
+  }
+}
 .rodape__img:first-child {
   background: url(../images/desktop/image-gallery-milkbottles.jpg) no-repeat center/cover;
   width: 25%;
   height: 300px;
+}
+@media only screen and (max-width: 375px) {
+  .rodape__img:first-child {
+    background: url(../images/mobile/image-gallery-milkbottles.jpg) no-repeat center/cover;
+    width: 50%;
+    height: 200px;
+  }
 }
 .rodape__img:nth-child(2) {
   background: url(../images/desktop/image-gallery-orange.jpg) no-repeat center/cover;
   width: 25%;
   height: 300px;
 }
+@media only screen and (max-width: 375px) {
+  .rodape__img:nth-child(2) {
+    background: url(../images/mobile/image-gallery-orange.jpg) no-repeat center/cover;
+    width: 50%;
+    height: 200px;
+  }
+}
 .rodape__img:nth-child(3) {
   background: url(../images/desktop/image-gallery-cone.jpg) no-repeat center/cover;
   width: 25%;
   height: 300px;
 }
+@media only screen and (max-width: 375px) {
+  .rodape__img:nth-child(3) {
+    background: url(../images/mobile/image-gallery-cone.jpg) no-repeat center/cover;
+    width: 50%;
+    height: 200px;
+  }
+}
 .rodape__img:last-child {
   background: url(../images/desktop/image-gallery-sugarcubes.jpg) no-repeat center/cover;
   width: 25%;
   height: 300px;
+}
+@media only screen and (max-width: 375px) {
+  .rodape__img:last-child {
+    background: url(../images/mobile/image-gallery-sugar-cubes.jpg) no-repeat center/cover;
+    width: 50%;
+    height: 200px;
+  }
 }
 .rodape__fundo {
   background-color: #458c7e;

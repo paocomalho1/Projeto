@@ -5,6 +5,10 @@
     &__imgs{
         display: flex;
         width: 100%;
+        @include celular{
+            flex-wrap: wrap;
+        }
+        
 
 
 
@@ -15,11 +19,23 @@
             width: 25%;
             height: 300px;
 
+            @include celular{
+                background: url(../images/mobile/image-gallery-milkbottles.jpg) no-repeat center / cover;
+                width: 50%;
+                height: 200px;
+            }
+
         }
         &:nth-child(2){
             background: url(../images/desktop/image-gallery-orange.jpg) no-repeat center / cover;
             width: 25%;
             height: 300px;
+            
+            @include celular{
+                background: url(../images/mobile/image-gallery-orange.jpg) no-repeat center / cover;
+                width: 50%;
+                height: 200px;
+            }
 
         }
         &:nth-child(3){
@@ -27,11 +43,22 @@
             width: 25%;
             height: 300px;
 
+            @include celular{
+                background: url(../images/mobile/image-gallery-cone.jpg) no-repeat center / cover;
+                width: 50%;
+                height: 200px;
+            }
+
         }
         &:last-child{
             background: url(../images/desktop/image-gallery-sugarcubes.jpg) no-repeat center / cover;
             width: 25%;
             height: 300px;
+            @include celular{
+                background: url(../images/mobile/image-gallery-sugar-cubes.jpg) no-repeat center / cover;
+                width: 50%;
+                height: 200px;
+            }
 
         }
 

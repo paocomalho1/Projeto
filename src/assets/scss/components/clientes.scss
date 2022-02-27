@@ -3,6 +3,9 @@
 .clientes{
 
     padding: 6rem;
+    @include celular{
+        padding: 2rem;
+    }
 
     &__titulo{
         text-align: center;
@@ -17,6 +20,10 @@
 
     &__conteiner{
         display: flex;
+        align-items: center;
+        @include celular{
+            flex-direction: column;
+        }
     }
 
     &__conteiner-2{
@@ -25,6 +32,9 @@
         flex-direction: column;
         margin: 1rem;
         width: 33%;
+        @include celular{
+            width: 100%;
+        }
 
 
     }
@@ -49,6 +59,9 @@
         font-size: 0.85rem;
         @include Barlow;
         color: $azul-cinza;
+        @include celular{
+            font-size: 1.0rem;
+        }
 
     }
     &__nome{

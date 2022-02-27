@@ -45,8 +45,8 @@ class Cabecalho extends Component {
                     <h1 className="cabecalho__titulo">We are creatives</h1>
                     <img src={ceta} alt="" className="cabecalho__ceta" />
                 </div>
+                <div className="conteiner__triangulo" id='triangulo'></div>
                 <div className="tela" id='tela'>
-                    <span className="tela__triangulo" id='triangulo'></span>
                     <nav className="tela__menu">
                         <ul className="tela__menu__itens">
                             <li className="tela__menu__item"><a href="" className="tela__menu__link">About</a></li>

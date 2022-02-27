@@ -5,15 +5,31 @@
     flex-direction: column;
     align-items: center;
 }
+.conteiner__triangulo{
+    display: none;
+    position: fixed;
+    width: calc(88% - 4rem);
+    justify-content: flex-end;
+    border-right: pxToRem(32) solid $branco;
+    border-left: pxToRem(32) solid transparent;
+    border-top: pxToRem(32) solid transparent;
+    z-index: 1;
+    left: 6%;
+    top: -84.6%;
+    @include celular{
+        display: block;
+    } 
+}
+
 
 .cabecalho{
-    padding-right: 6%;
-    padding-left: 6%;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
     background: url(../images/desktop/image-header.jpg) no-repeat center / cover;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     padding-bottom: 2.5rem;
     @include celular{
         background: url(../images/mobile/image-header.jpg) no-repeat center / cover;
@@ -51,6 +67,7 @@
                 color: $branco;
                 border-radius: 25px;
                 transition: opacity 300ms ease-in-out;
+                transition: all 300ms ease-in-out;
                 &:last-child{
                     margin-right: 0;
                     background-color: $branco;
@@ -126,18 +143,6 @@
             justify-content: center;
             text-align: center;
         }
-        &__triangulo{
-
-            height: 0px;
-            width:  0px;
-            border-right: pxToRem(32) solid $branco;
-            border-left: pxToRem(32) solid transparent;
-            border-top: pxToRem(32) solid transparent;
-            position: fixed;
-            top: -64.6%;
-            left: 77%;
-
-        }
         
         &__menu{
 
@@ -165,6 +170,7 @@
             @include Barlow;
             border-radius: 25px;
             padding: pxToRem(18) pxToRem(24);
+            transition: all 300ms ease-in-out;
             &:hover{
                 background-color:$amarelo;
                 color: $azul-dark;

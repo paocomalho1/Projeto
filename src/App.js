@@ -13,8 +13,10 @@ class App extends Component {
     return (
       <>
         <Cabecalho/>
+        <main>
         <Corpo/>
         <Clientes/>
+        </main>
         <Rodape/>
       </>
     );

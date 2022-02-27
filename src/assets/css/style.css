@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@900&display=swap");
 @keyframes slide-in {
   from {
-    top: -60%;
+    top: -80%;
   }
   to {
     top: 19%;
@@ -14,12 +14,12 @@
     top: 19%;
   }
   to {
-    top: -60%;
+    top: -80%;
   }
 }
 @keyframes slide-in-t {
   from {
-    top: -64.6%;
+    top: -84.6%;
   }
   to {
     top: 14.4%;
@@ -30,7 +30,7 @@
     top: 14.4%;
   }
   to {
-    top: -64.6%;
+    top: -84.6%;
   }
 }
 .conteiner {
@@ -49,7 +49,7 @@
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .cabecalho {
     background: url(../images/mobile/image-header.jpg) no-repeat center/cover;
   }
@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: space-around;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .cabecalho__menu .menu__itens {
     display: none;
   }
@@ -93,7 +93,7 @@
 .cabecalho__menu .menu__hamburger {
   display: none;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .cabecalho__menu .menu__hamburger {
     display: flex;
     flex-direction: column;
@@ -126,12 +126,12 @@
 .cabecalho .tela {
   position: fixed;
   background-color: white;
-  top: -60%;
+  top: -80%;
   left: 6%;
   width: 88%;
   display: none;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .cabecalho .tela {
     display: flex;
     justify-content: center;
@@ -200,7 +200,7 @@
   width: 100%;
   display: flex;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__conteiner-5 {
     flex-direction: column-reverse;
   }
@@ -214,9 +214,10 @@
   flex-direction: column;
   align-items: flex-start;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__conteiner {
     width: 100%;
+    align-items: center;
   }
 }
 .conteudo__conteiner-2 {
@@ -224,12 +225,13 @@
   flex-direction: row-reverse;
   width: 100%;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__conteiner-2 {
     flex-direction: column-reverse;
   }
 }
 .conteudo__titulo {
+  color: #25564b;
   font-size: 2rem;
   margin-right: 3rem;
   font-family: "Fraunces", serif;
@@ -237,8 +239,9 @@
   text-align: start;
   margin-left: 6rem;
   margin-bottom: 2rem;
+  color: #23303e;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__titulo {
     text-align: center;
     margin-left: 3rem;
@@ -254,7 +257,7 @@
   font-weight: 600;
   color: #a7abae;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__texto {
     text-align: center;
     margin-left: 3rem;
@@ -267,13 +270,14 @@
   text-align: start;
   text-decoration: none;
   color: #23303e;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Fraunces", serif;
   font-weight: 900;
   margin-left: 6rem;
   margin-top: 2rem;
+  text-transform: uppercase;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__link {
     text-align: center;
     margin-right: auto;
@@ -284,24 +288,38 @@
   width: 50%;
   height: 500px;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__img {
     width: 100%;
   }
 }
 
-.link1:hover {
-  border-bottom: rgba(250, 212, 0, 0.5) solid 4px;
+.link1:hover::after {
+  content: "";
+  display: block;
+  border-radius: 20px;
+  width: 7.2rem;
+  position: absolute;
+  z-index: -1;
+  height: 8px;
+  background-color: #fad400;
 }
 
-.link2:hover {
-  border-bottom: pink solid 4px;
+.link2:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 20px;
+  width: 7.2rem;
+  z-index: -1;
+  height: 8px;
+  background-color: #fe7867;
 }
 
 .img1 {
   background: url(../images/desktop/image-transform.jpg) no-repeat center/cover;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .img1 {
     background: url(../images/mobile/image-transform.jpg) no-repeat center/cover;
   }
@@ -310,7 +328,7 @@
 .img2 {
   background: url(../images/desktop/image-stand-out.jpg) no-repeat center/cover;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .img2 {
     background: url(../images/mobile/image-stand-out.jpg) no-repeat center/cover;
   }
@@ -319,7 +337,7 @@
 .img3 {
   background: url(../images/desktop/image-graphic-design.jpg) no-repeat center/cover;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .img3 {
     background: url(../images/mobile/image-graphic-design.jpg) no-repeat center/cover;
   }
@@ -328,7 +346,7 @@
 .img4 {
   background: url(../images/mobile/image-photography.jpg) no-repeat center/cover;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .img4 {
     background: url(../images/mobile/image-photography.jpg) no-repeat center/cover;
   }
@@ -338,7 +356,7 @@
   display: flex;
   width: 100%;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__conteiner-3 {
     width: 100%;
     flex-direction: column;
@@ -351,7 +369,7 @@
   flex-direction: column;
   justify-content: flex-end;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__conteiner-4 {
     width: 100%;
   }
@@ -366,7 +384,7 @@
   margin-right: 5rem;
   margin-left: 5rem;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__titulo-2 {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -382,7 +400,7 @@
   margin-right: 5rem;
   margin-left: 5rem;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .conteudo__texto-2 {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -392,7 +410,7 @@
 .clientes {
   padding: 6rem;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .clientes {
     padding: 2rem;
   }
@@ -412,7 +430,7 @@
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .clientes__conteiner {
     flex-direction: column;
   }
@@ -423,7 +441,7 @@
   margin: 1rem;
   width: 33%;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .clientes__conteiner-2 {
     width: 100%;
   }
@@ -448,7 +466,7 @@
   font-weight: 600;
   color: #818498;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .clientes__texto {
     font-size: 1rem;
   }
@@ -472,7 +490,7 @@
   display: flex;
   width: 100%;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .rodape__imgs {
     flex-wrap: wrap;
   }
@@ -482,7 +500,7 @@
   width: 25%;
   height: 300px;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .rodape__img:first-child {
     background: url(../images/mobile/image-gallery-milkbottles.jpg) no-repeat center/cover;
     width: 50%;
@@ -494,7 +512,7 @@
   width: 25%;
   height: 300px;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .rodape__img:nth-child(2) {
     background: url(../images/mobile/image-gallery-orange.jpg) no-repeat center/cover;
     width: 50%;
@@ -506,7 +524,7 @@
   width: 25%;
   height: 300px;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .rodape__img:nth-child(3) {
     background: url(../images/mobile/image-gallery-cone.jpg) no-repeat center/cover;
     width: 50%;
@@ -518,7 +536,7 @@
   width: 25%;
   height: 300px;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 767.98px) {
   .rodape__img:last-child {
     background: url(../images/mobile/image-gallery-sugar-cubes.jpg) no-repeat center/cover;
     width: 50%;

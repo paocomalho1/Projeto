@@ -22,6 +22,7 @@
         align-items: flex-start;
         @include celular{
             width: 100%;
+            align-items: center;
         }
 
 
@@ -41,12 +42,14 @@
 
     }
     &__titulo{
+        color: $esmeralda;
         font-size: 2.0rem;
         margin-right: 3rem;
         @include Fraunces-dark;
         text-align: start;
         margin-left: 6.0rem;
         margin-bottom: 2rem;
+        color:  $azul-dark;
         @include celular{
             text-align: center;
             margin-left: 3.0rem;
@@ -73,10 +76,11 @@
         text-align: start;
         text-decoration: none;
         color: $azul-dark;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         @include Fraunces-dark;
         margin-left: 6.0rem;
         margin-top: 2rem;
+        text-transform: uppercase;
         @include celular{
             text-align: center;
             margin-right: auto;
@@ -99,13 +103,37 @@
 }
 .link1{
     &:hover{
-        border-bottom: hsla(51, 100%, 49%,0.5) solid 4px;
+        &::after{
+
+            content: "";
+            display: block;
+            border-radius: 20px;
+            width: 7.2rem;
+            position: absolute;
+            z-index: -1;
+            height: 8px;
+            background-color: $amarelo;
+            
+            
+            
+        }
     }
 }
 .link2{
     &:hover{
-        border-bottom: pink solid 4px;
+    
+        &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 20px;
+        width: 7.2rem;
+        z-index: -1;
+        height: 8px;
+        background-color: $vermelho-claro;
+        
     }
+}
 }
 .img1{
     background: url(../images/desktop/image-transform.jpg) no-repeat center / cover;

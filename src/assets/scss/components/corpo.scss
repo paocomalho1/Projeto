@@ -102,27 +102,31 @@
     }
 }
 .link1{
-    &:hover{
-        &::after{
+    &::after{
 
-            content: "";
-            display: block;
-            border-radius: 20px;
-            width: 7.2rem;
-            position: absolute;
-            z-index: -1;
-            height: 8px;
-            background-color: $amarelo;
-            
-            
-            
+        content: "";
+        display: block;
+        border-radius: 20px;
+        width: 7.2rem;
+        position: absolute;
+        z-index: -1;
+        height: 8px;
+        background-color: hsla(51, 100%, 49%,0.25);
         }
+        &:hover{
+            &::after{
+                background-color: $amarelo;
+
+    
+    }
+            
+            
+            
+        
     }
 }
 .link2{
-    &:hover{
-    
-        &::after{
+    &::after{
         content: "";
         display: block;
         position: absolute;
@@ -130,10 +134,16 @@
         width: 7.2rem;
         z-index: -1;
         height: 8px;
-        background-color: $vermelho-claro;
+        background-color: hsla(7, 99%, 70%, 0.25)
+        
         
     }
-}
+    &:hover{
+        &::after{
+            background-color: $vermelho-claro;
+        }
+    }
+
 }
 .img1{
     background: url(../images/desktop/image-transform.jpg) no-repeat center / cover;

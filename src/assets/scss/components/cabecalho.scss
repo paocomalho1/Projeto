@@ -53,12 +53,16 @@
                 transition: opacity 300ms ease-in-out;
                 &:last-child{
                     margin-right: 0;
+                    background-color: $branco;
+                    color: $azul-dark;
+                    text-transform: uppercase;
+                    font-size: .80rem;
+                    @include Fraunces;
                 }
                 &:hover{
                     background-color:rgba(255, 255, 255, 0.3);
-                    text-transform: uppercase;
-                    font-size: .85rem;
                     cursor: pointer;
+                    color: $branco;
                 }
 
 
@@ -146,7 +150,6 @@
 
         }
         &__menu__item{
-            border-radius: 25px;
             margin-bottom: 1rem;
             color: $azul-cinza;
             &:last-child{
@@ -154,19 +157,24 @@
             }
             
 
-            &:hover{
-                background-color:$amarelo;
-                color: $azul-dark;
-                text-transform: uppercase;
-                
-            }
         }
         &__menu__link{
             text-decoration: none;
             color: inherit;
             display: block;
             @include Barlow;
+            border-radius: 25px;
             padding: pxToRem(18) pxToRem(24);
+            &:hover{
+                background-color:$amarelo;
+                color: $azul-dark;
+                text-transform: uppercase;
+                @include Fraunces;
+                
+            }
+            &:active{
+
+            }
         }
 
     }

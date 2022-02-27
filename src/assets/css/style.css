@@ -598,25 +598,25 @@
   background: url(../images/icon-facebook.svg) no-repeat center/cover;
 }
 .rodape__icone:first-child:hover {
-  background: url(../images/facebook-icon-white.png) no-repeat center/cover;
+  background: url(../images/icon-facebook-white.svg) no-repeat center/cover;
 }
 .rodape__icone:nth-child(2) {
   background: url(../images/icon-instagram.svg) no-repeat center/cover;
 }
 .rodape__icone:nth-child(2):hover {
-  background: url(../images/new-instagram-logo-white-border-icon-png-large.png) no-repeat center/cover;
+  background: url(../images/icon-instagram-white.svg) no-repeat center/cover;
 }
 .rodape__icone:nth-child(3) {
   background: url(../images/icon-twitter.svg) no-repeat center/cover;
 }
 .rodape__icone:nth-child(3):hover {
-  background: url(../images/twitter-icon-18-256.png) no-repeat center/cover;
+  background: url(../images/icon-twitter-white.svg) no-repeat center/cover;
 }
 .rodape__icone:last-child {
   background: url(../images/icon-pinterest.svg) no-repeat center/cover;
 }
 .rodape__icone:last-child:hover {
-  background: url(../images/White-Pinterest-Logo-Circle-1024x1024.png) no-repeat center/cover;
+  background: url(../images/icon-pinterest-white.svg) no-repeat center/cover;
 }
 .rodape__icone:hover {
   cursor: pointer;

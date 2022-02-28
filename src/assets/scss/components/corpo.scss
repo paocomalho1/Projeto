@@ -114,7 +114,7 @@
         right: 5px;
         bottom: 5px;
         z-index: -1;
-        height: 10px;
+        height: 9px;
         background-color: hsla(51, 100%, 49%,0.25);
         transition: all 300ms ease-in-out;
         @include celular{
@@ -144,7 +144,7 @@
         right: 5px;
         width: 8rem;
         z-index: -1;
-        height: 8px;
+        height: 9px;
         background-color: hsla(7, 99%, 70%, 0.25);
         transition: all 300ms ease-in-out;
         @include celular{
